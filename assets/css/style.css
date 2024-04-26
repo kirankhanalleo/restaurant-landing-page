@@ -1,0 +1,350 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+*{
+    font-family: 'poppins',sans-serif;
+}
+#nav-bar a{
+    color:black;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+}
+#nav-bar a:hover{
+    cursor:pointer;
+    color:#ec1722;
+}
+#nav-bar a:active{
+    color:#ec1722;
+}
+.custom-btn{
+    color:white;
+    background-color: #ec1722;
+    opacity: 0.8;
+    transition: 0.3s;
+    margin-right: 15px ;
+}
+.custom-btn:hover{
+    color:white; 
+    opacity: 1; 
+}
+.nav-item a{
+    margin-right: 15px;
+}
+.custom-crt{
+    font-size: 22px;
+}
+.custom-crt:hover{
+    color:#ec1722;
+}
+.custom-container{
+    padding: 0px 40px;
+}
+@media(max-width:992px){
+    #nav-bar{
+       display: none;
+    }
+}
+@media(min-width:992px){  
+    .welcome-txt{
+        margin-top: 120px;
+    }
+    #welcome-carousel h1{
+        font-size: 71px;
+    }
+    #home-work h1{
+        font-size: 60px;
+    }
+    .menu-main-bg h1{
+        font-size: 60px;
+    }
+    #plans h1{
+        font-size: 60px;
+    }
+    #testimonials h1{
+        font-size: 60px;
+    }
+}
+#welcome-carousel{
+    height:100%;
+    width:100%;
+    background: url('../images/welcome.jpg') center no-repeat;
+}
+.welcome-txt{
+    padding:70px;
+    background: rgba(248, 248, 248, 0.7);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2px;
+}
+#welcome-carousel h1{
+    font-family: 'poppins',sans-serif;
+}
+#welcome-carousel h1,#welcome-carousel p{
+    color:black;
+    opacity: 1;
+}
+#welcome-carousel p{
+    font-size: 18px;
+}
+.get-started{
+    margin-top: 20px;
+    background-color: #ec1722;
+    padding:10px 50px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.get-started:hover{
+    opacity:1;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+#home-work{
+    margin-top:70px;
+    margin-bottom: 55px;
+}
+#home-work h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#home-work h5{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+#home-work p{
+    text-align: justify;
+}
+.menu,.pot,.truck{
+    height:100px;
+    width:100px;
+    margin-bottom: 10px;
+}
+#online-menu{
+    background: url('../images/burger.jpg') center fixed no-repeat; 
+}
+.menu-main{
+    margin: auto;
+    width: 99%;
+    padding:30px;
+}
+.menu-main-bg{
+    margin-top: 10px;
+    background-color: white;
+    padding:40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.menu-main-bg .card{
+    margin-top: 30px;
+    flex-direction: row;
+    border-radius:5px;
+    width:100%;
+    height:80%;  
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(156, 150, 160, 0.4);
+}
+.menu-main-bg .card img {
+    width: 50%;
+}
+.menu-main-bg .card p{
+    text-align: left;
+}
+.view-menu{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #ec1722;
+    padding:10px 50px;
+    text-transform: uppercase;
+    color: white;
+    opacity:0.9;
+    border-radius: 5px;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.view-menu:hover{
+    opacity:1;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+#plans{
+    margin-top:70px;
+}
+#plans h1,#plans p{
+    text-align: center;
+}
+#plans .card-body{
+    padding:30px;
+}
+#plans .card{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    border-radius:5px;
+    width:100%;
+    height:80%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(156, 150, 160, 0.4);
+}
+.choose{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ec1722;
+    padding:10px 50px;
+    text-transform: uppercase;
+    color: white;
+    opacity:0.9;
+    border-radius: 5px;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.choose:hover{
+    opacity:1;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+#testimonials{
+    background-color: #eff9e5;
+    padding-top:60px;
+    padding-bottom: 50px;
+}
+#testimonials h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.carousel-inner {
+	width: 80%;
+	margin: 0 auto;
+    padding-bottom: 50px;
+}
+.carousel .carousel-item {
+	color: #999;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .testimonial {	
+	padding: 30px 0 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.carousel .overview {	
+	text-align: center;
+}
+.carousel .overview b {
+	color: #333;
+	font-size: 20px;
+	display: block;
+}
+.fa-star,.fa-star-half {
+	font-size: 16px;
+	color: #ffdc12;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background-color: #ec1722;
+	text-shadow: none;
+	top: 4px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control-prev, .carousel-control-next {
+	top:140px;
+}
+.carousel-control-next i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border: none;
+}
+.carousel-indicators li.active {		
+	background: #ec1722;		
+}
+#our-mission{
+    margin-top:70px;
+    margin-bottom:100px;
+    padding-top: 20px;
+}
+#our-mission .content{
+    float:left;
+    width:60%;
+}
+@media(max-width:600px){
+    #our-mission .content{
+        width:100%;
+    }
+    #our-mission .mission-img{
+        display: none;
+    }
+}
+#our-mission .mission-img{
+    height:50%;
+    width:40%;
+}
+#our-mission .content h1{
+    font-weight: bold;
+    line-height: 1.2;
+}
+#our-mission .content p{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+#our-mission .content{
+    padding:30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(156, 150, 160, 0.4);
+}
+.learn-more{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ec1722;
+    padding:10px 50px;
+    text-transform: uppercase;
+    color: white;
+    opacity:0.9;
+    border-radius: 5px;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.learn-more:hover{
+    opacity:1;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+#our-mission .mission-img{
+    margin-top: 100px;
+    border-radius: 2px;
+}
+#get-started-btm{
+    clear: both;
+}
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 183, 183);
+}
